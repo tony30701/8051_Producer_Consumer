@@ -41,8 +41,8 @@ Instead of immediately writing out the result, programmers should maintain a “
 when a car gets the parking spot (what time, which spot)
 when a car exits the parking lot (what time)
 Minimally, show the memory dump of the table to reflect the content of this log.
- 
-==**[Extra task]** Display the output of the log to UART in a human-readable text format.==
+
+**[Extra task]** Display the output of the log to UART in a human-readable text format.
 
 
 
@@ -52,12 +52,13 @@ Minimally, show the memory dump of the table to reflect the content of this log.
 **補充資訊:**
 
 ■ Timer programming using Timer interrupts involves following algorithm.
+
 (Ref: https://www.engineersgarage.com/tutorials/timers-8051-timer-programming-tutorial )
 
 1. Configure the Timer mode by passing a hex value to TMOD register. 
 2. Load the initial values in the Timer low TLx and high THx byte.
 3. Enable the Timer interrupt by passing hex value to IE register or setting required bits of IE register. For example,
-![ ](https://i.imgur.com/0NNS6kJ.png =300x150)
+![ ](https://i.imgur.com/0NNS6kJ.png)
 
 
 4. Start the Timer by setting TRx bit.
@@ -84,13 +85,14 @@ void ISR_Timer1(void) interrupt 3
 ```
 \-
 **Time 0 Mode 0(13bit)**
-![](https://i.imgur.com/5EC7WFn.png =550x140)
+![](https://i.imgur.com/5EC7WFn.png)
 
 \
 \-
   
 ■ TIME DELAY CALCULATION IN 8051
-Ref: http://iamtechnical.com/time-delay-calculation-in-8051
+
+(Ref: http://iamtechnical.com/time-delay-calculation-in-8051)
 
 To make the 8051 system compatible with the serial port of the personal computer PC, 11.0592MHz crystal oscillators is used.
 In the 8051, one machine cycle lasts 12 oscillator periods. So to calculate the machine cycle, we take 1/12 of the crystal frequency, then take the inverse of it results in time period. i.e frequency = 1/time period.
@@ -101,7 +103,7 @@ subroutine. The machine cycle is 1.085 us.
 
 ==**Answer:**==
 
-![](https://i.imgur.com/Uelz7NS.png =350x180)
+![](https://i.imgur.com/Uelz7NS.png)
 
 'HERE' Loop Calculations: 1+1+2, so [(1+1+2)x250] x 1.085 us = 1085 us.
 
