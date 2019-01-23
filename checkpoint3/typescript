@@ -1,0 +1,33 @@
+Script started on Thu Jan 17 15:50:30 2019
+[?1034hbash-3.2$ 
+bash-3.2$ ls
+[1m[34m0_docs[39;49m[0m                  preemptive.asm          preemptive.lst          preemptive.sym          testpreempt.c           testpreempt.lst         testpreempt.rel         typescript
+Makefile                preemptive.c            preemptive.rel          project_chkpoint3.pages testpreempt.hex         testpreempt.map         testpreempt.rst
+checkpoint3_demo.mov    preemptive.h            preemptive.rst          testpreempt.asm         testpreempt.lk          testpreempt.mem         testpreempt.sym
+bash-3.2$ 
+bash-3.2$ make clean
+rm *.hex *.lst *.map *.mem *.rel *.rst *.sym *.asm *.lk
+bash-3.2$ 
+bash-3.2$ ls
+[1m[34m0_docs[39;49m[0m                  Makefile                checkpoint3_demo.mov    preemptive.c            preemptive.h            project_chkpoint3.pages testpreempt.c           typescript
+bash-3.2$ 
+bash-3.2$ make 
+sdcc -c testpreempt.c
+testpreempt.c:173: warning 158: overflow in implicit constant conversion
+sdcc -c preemptive.c
+sdcc  -o testpreempt.hex testpreempt.rel preemptive.rel
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ this is busy s[Kwai[K[K[K[K[K[K[K[Kcompilation process of busy waiting veri[Ksion[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[1m[34m0_docs[39;49m[0m                  preemptive.asm          preemptive.lst          preemptive.sym          testpreempt.c           testpreempt.lst         testpreempt.rel         typescript
+Makefile                preemptive.c            preemptive.rel          project_chkpoint3.pages testpreempt.hex         testpreempt.map         testpreempt.rst
+checkpoint3_demo.mov    preemptive.h            preemptive.rst          testpreempt.asm         testpreempt.lk          testpreempt.mem         testpreempt.sym
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ this is compilation process of busy waiting version[1P[1P[1@f[1@o[1@r
+bash: this: command not found
+bash-3.2$ 
+bash-3.2$ exit
+exit
+
+Script done on Thu Jan 17 15:51:59 2019

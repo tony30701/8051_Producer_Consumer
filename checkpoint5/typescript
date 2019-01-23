@@ -1,0 +1,17 @@
+Script started on Thu Jan 17 05:10:53 2019
+[?1034hbash-3.2$ 
+bash-3.2$ make
+sdcc -c testparking.c
+testparking.c:241: warning 158: overflow in implicit constant conversion
+testparking.c:285: warning 158: overflow in implicit constant conversion
+testparking.c:321: warning 158: overflow in implicit constant conversion
+testparking.c:360: warning 158: overflow in implicit constant conversion
+testparking.c:399: warning 158: overflow in implicit constant conversion
+testparking.c:493: warning 158: overflow in implicit constant conversion
+sdcc -c preemptive.c
+sdcc  -o testparking.hex testparking.rel preemptive.rel
+bash-3.2$ 
+bash-3.2$ exit
+exit
+
+Script done on Thu Jan 17 05:11:07 2019
